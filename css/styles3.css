@@ -1,0 +1,368 @@
+
+        @font-face {
+            font-family: NotoSansTC;
+            src: url(../fonts/NotoSansTC-Regular.otf);
+        }
+        
+        @font-face {
+            font-family: NotoSansTC-Light;
+            src: url(../fonts/NotoSansTC-Light.otf);
+        }
+        
+        @font-face {
+            font-family: NotoSansTC-Medium;
+            src: url(../fonts/NotoSansTC-Medium.otf);
+        }
+        
+        a:link {
+            /*設定還沒有瀏覽過的連結*/
+            text-decoration: none;
+            color: #955E36;
+        }
+        
+        a:visited {
+            /*設定已經瀏覽過的連結*/
+            color: #955E36;
+        }
+        
+        a:hover {
+            /*設定滑鼠移經的連結*/
+            text-decoration: underline;
+            /*background-color:#fafafa;*/
+            color: #F99500;
+        }
+        
+        a:active {
+            /*設定正在點選的連結*/
+            text-decoration: none;
+            background-color: #F99500;
+            color: #fafafa;
+        }
+        
+        html {
+            display: block;
+            color: -internal-root-color;
+        }
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            min-width: 1280px;
+            min-height: 500px;
+        }
+        
+        body {
+            zoom: 0.8;
+            height: 100%;
+            min-width: 1280px;
+            min-height: 500px;
+            background-color: #FCF7F3;
+            width: auto;
+            text-align: center;
+        }
+        
+        .header {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            display: inline-block;
+            background-image: url(../img/cover.jpg);
+            background-repeat: no-repeat;
+            background-attachment: local;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+        
+        .margin_wrapper {
+            position: relative;
+            margin: 0 auto;
+            width: 1280px;
+            min-width: 1280px;
+        }
+        
+        .logo,
+        .logo>img {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: left;
+        }
+        
+        .header .logo {
+            position: absolute;
+            top: 32px;
+            left: 84px;
+        }
+        
+        .login {
+            position: absolute;
+            top: 15px;
+            right: 26px;
+            height: 20px;
+            font-family: "NotoSansTC-Light";
+            font-size: 18px;
+            text-align: center;
+            color: #7a7a7a
+        }
+        
+        .btn_login:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .btn_login {
+            outline: none;
+            background: transparent;
+            border: 0;
+            font-family: "NotoSansTC";
+            font-size: 18px;
+            color: #7a7a7a;
+        }
+        
+        .search_group {
+            margin: auto;
+            position: absolute;
+            top: 405px;
+            left: 84px;
+        }
+        
+        .search {
+            widows: 550px;
+            height: 40px;
+            display: inline-flex;
+        }
+        
+        .search_box {
+            border: 0;
+            padding: 0;
+            width: 500px;
+            height: 40px;
+            line-height: 1.5em;
+            border: 1px #888888 solid;
+            border-radius: 4px;
+        }
+        
+        input {
+            box-sizing: border-box;
+            padding: 9px !important;
+            font-family: "NotoSansTC";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            outline: none;
+        }
+        
+        input::placeholder {
+            padding: 9px 14px;
+            font-family: "NotoSansTC";
+            font-style: normal;
+            font-weight: normal;
+            box-sizing: border-box;
+            font-size: 18px;
+            color: #888888;
+        }
+        
+        .search_button {
+            position: relative;
+            right: 3px;
+            width: 50px;
+            height: 40px;
+            padding: 0;
+            border: 0;
+            color: #fff;
+            background-color: #F99500;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+            outline: none;
+            cursor: pointer;
+        }
+        
+        .button_div {
+            display: inline-flex;
+            position: absolute;
+            right: 91px;
+            top: 395px;
+        }
+        
+        .button {
+            justify-content: space-between;
+            width: 120px;
+            height: 40px;
+            margin: 10px;
+            padding: 0;
+            border: 0;
+            font-family: "NotoSansTC";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: #fff;
+            background-color: #F99500;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+        }
+        
+        .button:hover {
+            color: #F99500;
+            background-color: #FFF;
+        }
+        
+        .button_back {
+            font-size: 24px;
+            width: 100px;
+            height: 50px;
+            color: #FFF;
+            background-color: #F99500;
+            border: 1px #F99500 solid;
+            margin-top: 50px;
+        }
+        
+        .button_back:hover {
+            color: #F99500;
+            background-color: #fff;
+        }
+        
+        .body {
+            width: 100%;
+            height: 600px;
+        }   
+        
+        .list_box_wrapper {
+            display: inline-flex;
+            justify-content: space-between;
+            width: 875px;
+            height: 275px;
+            padding: 0;
+        }
+        
+       
+        
+        .footer_box>.logo {
+            position: absolute;
+            margin-top: 18px;
+        }
+        
+        .footer {
+            height: 370px;
+            background: #FFCF86;
+            position: relative;
+        }
+        
+        .footer_box {
+            position: relative;
+            top: 37px;
+            margin: 37px 268px 6px 170px;
+            width: 842px;
+            height: 327px;
+        }
+        
+        .footer_list_wrapper {
+            display: inline-flex;
+            float: right;
+        }
+        
+        .footer_list_wrapper>li {
+            margin-bottom: 5px;
+            padding-left: 126px;
+            font-family: "NotoSansTC";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            color: #5A2804;
+        }
+        
+        .footer_list_content {
+            padding: 0;
+            font-family: "NotoSansTC-Light";
+            font-size: 18px;
+            line-height: 21px;
+            color: #955E36;
+        }
+        
+        .footer_list_content>li {
+            margin-top: 15px;
+        }
+        
+        #login_or_register {
+            position: relative;
+            left: 3.5px;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        .copyright {
+            position: absolute;
+            right: 211px;
+            bottom: 0;
+            width: 322px;
+            height: 26px;
+            font-family: "NotoSansTC";
+            font-size: 18px;
+            line-height: 21px;
+            color: #955E36;
+        }
+        
+        .footer_btn {
+            width: 40px;
+            height: 40px;
+            padding: 2px;
+            border: 1px solid #5A2804;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background: #FFCF86;
+            position: absolute;
+            bottom: 104px;
+            outline:none;
+        }
+
+        .footer_btn:hover{
+            border: 1px solid #5A2804;
+            background: #F99500;
+            cursor:pointer;
+        }
+        
+        .footer_btn>img {
+            width: 35px;
+            height: 35px;
+        }
+        
+        #Facebook {
+            left: 0;
+        }
+        
+        #Instagram {
+            left: 55px;
+        }
+        
+        #Twitter {
+            left: 110px;
+        }
+        
+        #suggestion {
+            position: absolute;
+            left: 0;
+            bottom: 49px;
+            width: 150px;
+            height: 40px;
+        }
+        
+        #suggestion>img {
+            float: left;
+        }
+        
+        #suggestion>span {
+            position: relative;
+            bottom: 2px;
+            display: inline-block;
+            font-family: "NotoSansTC-Light";
+            font-size: 18px;
+            line-height: 21px;
+            padding: 8px 0 8px 0;
+            color: #5a2804
+        }

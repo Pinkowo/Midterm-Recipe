@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Recipe
+    </title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".dish_name").hover(function() {
+                if ($(this).parent().children(".content_img").css("filter") == 'none') {
+                    $(this).parent().children(".content_img").css({
+                        'filter': 'blur(2px)'
+                    });
+                } else {
+                    $(this).parent().children(".content_img").css({
+                        'filter': 'none'
+                    });
+                };
+            });
+            $(".content_img").hover(function() {
+                if ($(this).css("filter") == 'none') {
+                    $(this).css({
+                        'filter': 'blur(2px)'
+                    });
+                } else {
+                    $(this).css({
+                        'filter': 'none'
+                    });
+                };
+            });
+
+        });
+    </script>
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">-->
+</head>
+
+<body>
+    <div class="header">
+        <div class="margin_wrapper">
+            <div class="login">
+                <button class="btn_login" onclick="location.href='./index2.html'">登入 / 註冊</button>
+            </div>
+            <div>
+                <a href="./index.html" class="logo">
+                    <img src="./img/pot2.4.png" alt=Logo>
+                </a>
+            </div>
+            <div class="search_group">
+                <form class="search">
+                    <input type="text" placeholder="搜尋食譜或食材，以空格分開" class="search_box">
+                    <button class="search_button">
+                        <img src="./img/magnifier.png" alt="Magnifier">
+                    </button>
+                </form>
+            </div>
+            <div class="button_div">
+                <button class="button" onclick="location.href='./index2.html'">收藏食譜 ♡</button>
+                <button class="button" onclick="location.href='./index2.html'">撰寫食譜 +</button>
+            </div>
+        </div>
+    </div>
+    <div class="body ">
+        <div class="margin_wrapper">
+            <div class="meal ">
+                <div class="meal_img breakfast">
+                    <img src="./img/breakfast.jpg" alt="Breakfast" class="meal_img">
+                    <span class="meal_text">早餐</span>
+                </div>
+                <div class="meal_img lunch">
+                    <img src="./img/lunch.jpg" alt="Lunch" class="meal_img">
+                    <span class="meal_text">午餐</span>
+                </div>
+                <div class="meal_img dinner">
+                    <img src="./img/dinner.jpg" alt="Dinner" class="meal_img">
+                    <span class="meal_text">晚餐</span>
+                </div>
+                <div class="meal_img snack">
+                    <img src="./img/snack.jpg" alt="Snack" class="meal_img">
+                    <span class="meal_text">點心</spam>
+                </div>
+            </div>
+
+        <div class="body_content">
+            
+            <div class="content_box">
+                <span class="content_title">每日精選</span>
+                    <span class="more">看更多</span>
+                    <div class="content_list">
+                        <div class="content_wrapper">
+                            <img src="./img/recipe_cover/large_1bca13f5c088d1c0.jpg" class="content_img">
+                            <div class="dish_name">巴斯克鹹蛋乳酪蛋糕</div>
+                            <div class="author">愛柴的廚房日記</div>
+                        </div>
+                        <div class="content_wrapper" onclick="location.href='./index4.html'">
+                            <img src="./img/recipe_cover/large_494173e2b361a702.jpg" class="content_img">
+                            <div class="dish_name">萬聖節幽靈麵包</div>
+                            <div class="author">安夏の手作人妻食堂</div>
+                        </div>
+                        <div class="content_wrapper">
+                            <img src="./img/recipe_cover/large_4aac260b6f468a8c.jpg" class="content_img">
+                            <div class="dish_name">銀耳南瓜甜湯</div>
+                            <div class="author">簡單吃簡單</div>
+                        </div>
+                        <div class="content_wrapper">
+                            <img src="./img/recipe_cover/large_58b6f82bab740595.jpg" class="content_img">
+                            <div class="dish_name">破布子炒筒篙</div>
+                            <div class="author">chun手作料理食堂</div>
+                        </div>
+                        <div class="content_wrapper">
+                            <img src="./img/recipe_cover/large_775fb311215cff68.jpg" class="content_img">
+                            <div class="dish_name">costco懶人餐</div>
+                            <div class="author">很廢的懶人料理</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content_box" id="new">
+                    <span class="content_title">最新上架</span>
+                    <span class="more">看更多</span>
+                    <div class="content_list">
+                        <div class="content_wrapper" onclick="location.href='../Recipe page/2/index.html'">
+                            <img src="./img/recipe_cover/large_9461bb482fc28daf.jpg" class="content_img">
+                            <div class="dish_name">炸豆腐</div>
+                            <div class="author">Gourmet@美食家</div>
+                        </div>
+                        <div class="content_wrapper">
+                            <img src="./img/recipe_cover/large_9e35030fc231c66f.jpg" class="content_img">
+                            <div class="dish_name">麻油醬燒三菇</div>
+                            <div class="author">鍾忞圻</div>
+                        </div>
+                        <div class="content_wrapper" onclick="location.href='../Recipe page/3/index.html'">
+                            <img src="./img/recipe_cover/large_c98a5bb952ff84e5.jpg" class="content_img">
+                            <div class="dish_name">溏心蛋</div>
+                            <div class="author">阿朵廚房</div>
+                        </div>
+                        <div class="content_wrapper">
+                            <img src="./img/recipe_cover/large_775fb311215cff68.jpg" class="content_img">
+                            <div class="dish_name">costco懶人餐</div>
+                            <div class="author">很廢的懶人料理</div>
+                        </div>
+                        <div class="content_wrapper" onclick="location.href='../Recipe page/4/index.html'">
+                            <img src="./img/recipe_cover/large_1bca13f5c088d1c0.jpg" class="content_img">
+                            <div class="dish_name">巴斯克鹹蛋乳酪蛋糕</div>
+                            <div class="author">愛柴的廚房日記</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content_box" id="hot">
+                    <span class="content_title">熱門食譜</span>
+                    <span class="more">看更多</span>
+                    <div class="content_list">
+                        <div class="content_wrapper">
+                            <img src="./img/recipe_cover/large_e7cf9ebea65907e3.jpg" class="content_img">
+                            <div class="dish_name">壽喜燒豬烏龍麵</div>
+                            <div class="author">黃湘芸</div>
+                        </div>
+                        <div class="content_wrapper">
+                            <img src="./img/recipe_cover/large_775fb311215cff68.jpg" class="content_img">
+                            <div class="dish_name">costco懶人餐</div>
+                            <div class="author">很廢的懶人料理</div>
+                        </div>
+                        <div class="content_wrapper" onclick="location.href='../Recipe page/1/index.html'">
+                            <img src="./img/recipe_cover/large_e945ece83f29c291.jpg" class="content_img">
+                            <div class="dish_name">玉米濃湯</div>
+                            <div class="author">Hannah Wu</div>
+                        </div>
+                        <div class="content_wrapper">
+                            <img src="./img/recipe_cover/large_40836ca4ddc9bf62.jpg" class="content_img">
+                            <div class="dish_name">清燉牛肉</div>
+                            <div class="author">嫚翎～</div>
+                        </div>
+                        <div class="content_wrapper">
+                            <img src="./img/recipe_cover/large_9e35030fc231c66f.jpg" class="content_img">
+                            <div class="dish_name">麻油醬燒三菇</div>
+                            <div class="author">鍾忞圻</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content_box content_list_box" id="others">
+                    <span class="content_title" id="more_classification">更多分類</span>
+                    <div class="list_big_wrapper">
+                        <ul class="list_box_wrapper" style="list-style-type:none">
+                            <li class="list_size">
+                                <span class="tri">▽</span>
+                                <span class="list_title">節慶習俗</span>
+                                <ul class="list_content" style="list-style-type:none">
+                                    <li class="list_text">新年</li>
+                                    <li class="list_text">元宵</li>
+                                    <li class="list_text">端午</li>
+                                    <li class="list_text">七夕</li>
+                                    <li class="list_text">中秋</li>
+                                    <li class="list_text">聖誕</li>
+                                </ul>
+                            </li>
+                            <li class="list_size">
+                                <span class="tri">▽</span>
+                                <span class="list_title">異國風情</span>
+                                <ul class="list_content" style="list-style-type:none">
+                                    <li class="list_text">中式</li>
+                                    <li class="list_text">日式</li>
+                                    <li class="list_text">韓式</li>
+                                    <li class="list_text">港式</li>
+                                    <li class="list_text">南洋</li>
+                                    <li class="list_text">西式</li>
+                                </ul>
+                            </li>
+                            <li class="list_size">
+                                <span class="tri">▽</span>
+                                <span class="list_title">烹調方式</span>
+                                <ul class="list_content" style="list-style-type:none">
+                                    <li class="list_text">清蒸</li>
+                                    <li class="list_text">水煮</li>
+                                    <li class="list_text">油炸</li>
+                                    <li class="list_text">爆炒</li>
+                                    <li class="list_text">乾煎</li>
+                                    <li class="list_text">燜燒</li>
+                                </ul>
+                            </li>
+                            <li class="list_size">
+                                <span class="tri">▽</span>
+                                <span class="list_title">甜點烘焙</span>
+                                <ul class="list_content" style="list-style-type:none">
+                                    <li class="list_text">蛋糕</li>
+                                    <li class="list_text">餅乾</li>
+                                    <li class="list_text">鬆餅</li>
+                                    <li class="list_text">蛋塔</li>
+                                    <li class="list_text">泡芙</li>
+                                    <li class="list_text">其他</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <ul class="list_box_wrapper" style="list-style-type:none">
+                            <li class="list_size">
+                                <span class="tri">▽</span>
+                                <span class="list_title">主食</span>
+                                <ul class="list_content" style="list-style-type:none">
+                                    <li class="list_text">米食</li>
+                                    <li class="list_text">麵食</li>
+                                    <li class="list_text">大餅</li>
+                                    <li class="list_text">麵包</li>
+                                    <li class="list_text">饅頭</li>
+                                    <li class="list_text">餃類</li>
+                                </ul>
+                            </li>
+                            <li class="list_size">
+                                <span class="tri">▽</span>
+                                <span class="list_title">肉類</span>
+                                <ul class="list_content" style="list-style-type:none">
+                                    <li class="list_text">牛肉</li>
+                                    <li class="list_text">羊肉</li>
+                                    <li class="list_text">豬肉</li>
+                                    <li class="list_text">雞肉</li>
+                                    <li class="list_text">鴨肉</li>
+                                    <li class="list_text">海鮮</li>
+                                </ul>
+                            </li>
+                            <li class="list_size">
+                                <span class="tri">▽</span>
+                                <span class="list_title">蔬果</span>
+                                <ul class="list_content" style="list-style-type:none">
+                                    <li class="list_text">根莖</li>
+                                    <li class="list_text">葉菜</li>
+                                    <li class="list_text">花菜</li>
+                                    <li class="list_text">豆類</li>
+                                    <li class="list_text">菇類</li>
+                                    <li class="list_text">瓜果</li>
+                                </ul>
+                            </li>
+                            <li class="list_size">
+                                <span class="tri">▽</span>
+                                <span class="list_title">飲品</span>
+                                <ul class="list_content" style="list-style-type:none">
+                                    <li class="list_text">茶類</li>
+                                    <li class="list_text">奶類</li>
+                                    <li class="list_text">果汁</li>
+                                    <li class="list_text">咖啡</li>
+                                    <li class="list_text">調酒</li>
+                                    <li class="list_text">冰沙</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer ">
+        <div class="margin_wrapper">
+            <div class="footer_box">
+                <div class="logo">
+                    <img src="./img/pot2.4.png" alt="Logo">
+                </div>
+                <ul class="footer_list_wrapper" style="list-style-type:none">
+                    <li>關於我們
+                        <ul class="footer_list_content">
+                            <li>>
+                                <a href="./index3.html" target="_self">公司資訊</a>
+                            </li>
+                            <li>>
+                                <a href="./index3.html" target="_self">廣告合作</a>
+                            </li>
+                            <li>>
+                                <a href="./index3.html" target="_self">聯絡我們</a>
+                            </li>
+                            <li>>
+                                <a href="./index3.html" target="_self">服務條款</a>
+                            </li>
+                            <li>>
+                                <a href="./index3.html" target="_self">隱私政策</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>食譜專區
+                            <ul class="footer_list_content">
+                                <li>>
+                                    <a href="./index.html#hot" target="_self"
+                                        onclick="document.getElementById('hot').scrollIntoView()">熱門食譜</a>
+                                </li>
+                                <li>>
+                                    <a href="./index.html#new" target="_self"
+                                    onclick="document.getElementById('new').scrollIntoView()">最新上架</a>
+                                </li>
+                                <li>>
+                                    <a href="./index.html" target="_self">早餐推薦</a>
+                                </li>
+                                <li>>
+                                    <a href="./index.html" target="_self">午餐推薦</a>
+                                </li>
+                                <li>>
+                                    <a href="./index.html" target="_self">晚餐推薦</a>
+                                </li>
+                                <li>>
+                                    <a href="./index.html#others" target="_self"
+                                    onclick="document.getElementById('others').scrollIntoView()">其他分類</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li>會員中心
+                        <ul class="footer_list_content">
+                            <li id=login_or_register>>
+                                <a href="./index2.html" target="_self">登入/註冊</a>
+                            </li>
+                            <li>>
+                                <a href="./index3.html" target="_self">我的收藏</a>
+                            </li>
+                            <li>>
+                                <a href="./index2.html" target="_self">帳號設定</a>
+                            </li>
+                            <li>>
+                                <a href="./index2.html" target="_self">忘記密碼</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="footer_btn" id=Facebook>
+                    <img src="./img/icon_002.png" alt="Facebook" onclick="location.href='./index3.html'">
+                </button>
+                <button class="footer_btn" id=Instagram>
+                    <img src="./img/icon_001.png" alt="Instagram" onclick="location.href='./index3.html'">
+                </button>
+                <button class="footer_btn" id=Twitter>
+                    <img src="./img/icon_005.png" alt="Twitter" onclick="location.href='./index3.html'">
+                </button>
+                <button class="footer_btn" id=suggestion>
+                    <img src="./img/icon_004.png" alt="suggestion" onclick="location.href='./index3.html'">
+                    <span onclick="location.href='../Developing page/index.html'">問題與建議</span>
+                </button>
+                <div class="copyright">
+                    Copyright © Foodmonth 保留所有權利
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

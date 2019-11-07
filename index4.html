@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Recipe
+        </title>
+        <link rel="stylesheet" href="./css/styles4.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".unchecked").click(function() {
+                    if ($(".checked").is(":hidden")) {
+                        $(".checked").show();
+                        $(".unchecked").hide();
+                    }
+                });
+                $(".checked").click(function() {
+                    if ($(".unchecked").is(":hidden")) {
+                        $(".unchecked").show();
+                        $(".checked").hide();
+                    }
+                });
+            });
+        </script>
+        <!--<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">-->
+    </head>
+
+<body>
+    <div class="header">
+        <div class="margin_wrapper">
+            <div class="login">
+                <button class="btn_login" onclick="location.href='./index2.html'">登入 / 註冊</button>
+            </div>
+            <div>
+                <a href="./index.html" class="logo">
+                    <img src="./img/pot2.4.png" alt=Logo>
+                </a>
+            </div>
+            <div class="search_group">
+                <form class="search">
+                    <input type="text" placeholder="搜尋食譜或食材，以空格分開" class="search_box">
+                    <button class="search_button">
+                        <img src="./img/magnifier.png" alt="Magnifier">
+                    </button>
+                </form>
+            </div>
+            <div class="button_div">
+                <button class="button" onclick="location.href='./index2.html'">收藏食譜 ♡</button>
+                <button class="button" onclick="location.href='./index2.html'">撰寫食譜 +</button>
+            </div>
+        </div>
+    </div>
+    <div class="body ">
+        <div class="margin_wrapper">
+            <div class="title">
+                <div class="title_icon_wrapper">
+                    <div class="title_icon" id="Facebook">
+                        <img src="./img/Recipe/icons_facebook.png" alt="Facebook">
+                        <span id="Facebook_text">分享</span></div>
+                    <div class="title_icon" id="Line">
+                        <img src="./img/Recipe/icons_line.png" alt="Line">
+                        <span  id="Line_text">傳送</span></div>
+                    <div class="title_icon" id="Messenger">
+                        <img src="./img/Recipe/icons_messenger.png" alt="Messenger">
+                        <span id="Messenger_text">傳送</span></div>
+                    <div class="title_icon" id="Print">
+                        <img src="./img/Recipe/icons_print.png" alt="Print">
+                        <span id="Print_text">列印</span></div>
+                </div>
+                <div id=author>安夏の手作人妻食堂</div>
+                <div id=date>2019年10月28日</div>
+                <div id="description_wrapper">
+                    <div class="description">萬聖節超應景的幽靈麵包，作法非常的簡單！</div>
+                    <div class="description">和小朋友一起製作，讓麵包變得好吃又好玩~♫</div>
+                </div>
+                <div>
+                    <img src="./img/Search/1.png" onmouseover="this.src='./img/Search/4.png'" onmouseleave="this.src='./img/Search/1.png'" onmousedown="this.src='./img/Search/3.png'" onmouseup="this.src='./img/Search/1.png'" class="collection unchecked">
+                    <img src="./img/Search/2.png" onmouseover="this.src='./img/Search/4.png'" onmouseleave="this.src='./img/Search/2.png'" onmousedown="this.src='./img/Search/3.png'" onmouseup="this.src='./img/Search/2.png'" class="collection checked" style="display:none">
+                </div>
+                <div class="title_img"><img src="./img/萬聖節幽靈麵包/large_494173e2b361a702.jpg"></div>
+                <div id="recipe_name">萬聖節幽靈麵包</div>
+            </div>
+            <div class="material">
+                <div id=Top_wrapper>
+                    <div class="main_content" id=people>8人份</div>
+                    <div class="borderline" id=straight></div>
+                    <div class="main_content" id=time>20分鐘</div>
+                </div>
+                <div class="borderline" id=horizon></div>
+                <div>
+                    <div class="material_list_wrapper">
+                        <ul>
+                            <li>
+                                <div class="material_text">高筋麵粉</div>
+                                <div class="material_text">300g</div>
+                            </li>
+                            <li>
+                                <div class="material_text">煉乳</div>
+                                <div class="material_text">20g</div>
+                            </li>
+                            <li>
+                                <div class="material_text">酵母</div>
+                                <div class="material_text">1小匙</div>
+                            </li>
+                            <li>
+                                <div class="material_text">防潮糖粉</div>
+                                <div class="material_text">適量</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="material_list_wrapper">
+                        <ul>
+                            <li>
+                                <div class="material_text">牛奶</div>
+                                <div class="material_text">180g</div>
+                            </li>
+                            <li>
+                                <div class="material_text">鹽</div>
+                                <div class="material_text">1小匙</div>
+                            </li>
+                            <li>
+                                <div class="material_text">奶油</div>
+                                <div class="material_text">30g</div>
+                            </li>
+                            <li>
+                                <div class="material_text">防潮可可粉</div>
+                                <div class="material_text">適量</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content_box">
+                    <div class="content_number">1</div>
+                    <div class="content_text">
+                        麵粉+煉乳+鹽+鮮奶+酵母混和成團
+                    </div>
+                </div>
+                <div class="content_box">
+                    <div class="content_number">2</div>
+                    <div class="content_text">
+                        加入奶油揉至光滑不黏手,進行第一次發酵至2倍大
+                    </div>
+                </div>
+                <div class="content_box">
+                    <div class="content_number">3</div>
+                    <div class="content_text">
+                        將麵團分成8分，搓成水滴狀（尾巴ㄧ定要細細長長）
+                    </div>
+                </div>
+                <div class="content_img_box"><img src="./img/萬聖節幽靈麵包/large_c42bc115d4188423.jpg"></div>
+                <div class="content_box">
+                    <div class="content_number">4</div>
+                    <div class="content_text">
+                        兩邊可以剪個小手,再發酵20分鐘
+                    </div>
+                </div>
+                <div class="content_img_box"><img src="./img/萬聖節幽靈麵包/large_760570c47e7123af.jpg"></div>
+                <div class="content_box">
+                    <div class="content_number">5</div>
+                    <div class="content_text">
+                        烤箱160度預熱完成後,放進去烘烤18分鐘出爐放涼
+                    </div>
+                </div>
+                <div class="content_box">
+                    <div class="content_number">6</div>
+                    <div class="content_text">
+                        拿一張紙,用美工刀割出表情
+                    </div>
+                </div>
+                <div class="content_img_box"><img src="./img/萬聖節幽靈麵包/large_8cb6c11355bb17be.jpg"></div>
+                <div class="content_box">
+                    <div class="content_number">7</div>
+                    <div class="content_text">
+                        麵包如果不小心太上色就先灑上防潮糖粉,再把表情紙放上去,灑上防潮可可粉就完成囉
+                    </div>
+                </div>
+                <div class="content_img_box"><img src="./img/萬聖節幽靈麵包/large_7a9d2298f17a8f8b.jpg"></div>
+                <div>
+                    <img src="./img/Search/1.png" onmouseover="this.src='./img/Search/4.png'" onmouseleave="this.src='./img/Search/1.png'" onmousedown="this.src='./img/Search/3.png'" onmouseup="this.src='./img/Search/1.png'" class="collection content_collection unchecked">
+                    <img src="./img/Search/2.png" onmouseover="this.src='./img/Search/4.png'" onmouseleave="this.src='./img/Search/2.png'" onmousedown="this.src='./img/Search/3.png'" onmouseup="this.src='./img/Search/2.png'" class="collection content_collection checked">
+                </div>
+            </div>
+            <div class="icon">
+                <div class="icon_box">
+                    <div><img src="./img/Recipe/icons_facebook.png" alt="Facebook" class="social_share"></div>
+                    <div><img src="./img/Recipe/icons_line.png" alt="Line" class="social_share"></div>
+                    <div><img src="./img/Recipe/icons_messenger.png" alt="Messenger" class="social_share"></div>
+                    <div><img src="./img/Recipe/icons_print.png" alt="Print" class="social_share"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer ">
+        <div class="margin_wrapper">
+            <div class="footer_box">
+                <div class="logo">
+                    <img src="./img/pot2.4.png" alt="Logo">
+                </div>
+                <ul class="footer_list_wrapper" style="list-style-type:none">
+                    <li>關於我們
+                        <ul class="footer_list_content">
+                            <li>>
+                                <a href="./index3.html" target="_self">公司資訊</a>
+                            </li>
+                            <li>>
+                                <a href="./index3.html" target="_self">廣告合作</a>
+                            </li>
+                            <li>>
+                                <a href="./index3.html" target="_self">聯絡我們</a>
+                            </li>
+                            <li>>
+                                <a href="./index3.html" target="_self">服務條款</a>
+                            </li>
+                            <li>>
+                                <a href="./index3.html" target="_self">隱私政策</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>食譜專區
+                            <ul class="footer_list_content">
+                                <li>>
+                                    <a href="./index.html#hot" target="_self"
+                                        onclick="document.getElementById('hot').scrollIntoView()">熱門食譜</a>
+                                </li>
+                                <li>>
+                                    <a href="./index.html#new" target="_self"
+                                    onclick="document.getElementById('new').scrollIntoView()">最新上架</a>
+                                </li>
+                                <li>>
+                                    <a href="./index.html" target="_self">早餐推薦</a>
+                                </li>
+                                <li>>
+                                    <a href="./index.html" target="_self">午餐推薦</a>
+                                </li>
+                                <li>>
+                                    <a href="./index.html" target="_self">晚餐推薦</a>
+                                </li>
+                                <li>>
+                                    <a href="./index.html#others" target="_self"
+                                    onclick="document.getElementById('others').scrollIntoView()">其他分類</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li>會員中心
+                        <ul class="footer_list_content">
+                            <li id=login_or_register>>
+                                <a href="./index2.html" target="_self">登入/註冊</a>
+                            </li>
+                            <li>>
+                                <a href="./index3.html" target="_self">我的收藏</a>
+                            </li>
+                            <li>>
+                                <a href="./index2.html" target="_self">帳號設定</a>
+                            </li>
+                            <li>>
+                                <a href="./index2.html" target="_self">忘記密碼</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="footer_btn" id=Facebook>
+                    <img src="./img/icon_002.png" alt="Facebook" onclick="location.href='./index3.html'">
+                </button>
+                <button class="footer_btn" id=Instagram>
+                    <img src="./img/icon_001.png" alt="Instagram" onclick="location.href='./index3.html'">
+                </button>
+                <button class="footer_btn" id=Twitter>
+                    <img src="./img/icon_005.png" alt="Twitter" onclick="location.href='./index3.html'">
+                </button>
+                <button class="footer_btn" id=suggestion>
+                    <img src="./img/icon_004.png" alt="suggestion" onclick="location.href='./index3.html'">
+                    <span onclick="location.href='../Developing page/index.html'">問題與建議</span>
+                </button>
+                <div class="copyright">
+                    Copyright © Foodmonth 保留所有權利
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
